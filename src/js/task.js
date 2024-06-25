@@ -16,10 +16,7 @@ function idGenerator(){
 
 }
 
-function createTask() {
-
-    var taskDescription = document.getElementById("newTask").value;
-
+function createTask(taskDescription) {
     var task = {
         id: idGenerator(),
         data: {
@@ -28,31 +25,14 @@ function createTask() {
     };
 
     tasks.push(task);
-
-    updateScreen();
     
 }
 
-function updateScreen() {
-    var list = "<ul>";
 
-    tasks.forEach(task => {
-        list += "<li id-data=" + task.id + ">" + task.data.description+"</li>"
-        
-        list += "<button onclick=deleteTask(this) id-data=" + task.id + ">Apagar</button>";
-    
-    });
-
-    list += "</ul>";
-
-    document.getElementById("list").innerHTML = list;
-    document.getElementById("newTask").value = "";
-
-}
-function deleteTask(element) {
+function deleteTask(id) {
     console.log(element);
 
-    tasks = tasks.filter(task=>task.id!=element.getAttribute("id-data"));
+    tasks = tasks.filter(task=>task.id!=id);
 
     updateScreen();
 }
