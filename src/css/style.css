@@ -1,9 +1,9 @@
-.container{
+.container {
     max-width: 800px;
     margin: auto;
 }
 
-#newTask{
+#newTask {
     height: 35px;
     width: 80%;
 }
@@ -15,8 +15,3 @@ button {
     font-size: 1.2rem;
     border: none;
 }
-
-
-
-
-

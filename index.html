@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -8,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Todo List</h1>
@@ -23,7 +25,26 @@
 
 </body>
 
-<script src="./src/js/task.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-firestore.js"></script>
+<!-- <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyCPckEt-ecc6LnW96BIPheugzb-MQsAipU",
+        authDomain: "todo-c9b29.firebaseapp.com",
+        projectId: "todo-c9b29",
+        storageBucket: "todo-c9b29.appspot.com",
+        messagingSenderId: "1035258109192",
+        appId: "1:1035258109192:web:caa2a9a470c74a90a1a0bd",
+        measurementId: "G-5H9Q9EK4MB"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script> -->
+
+<script src="config.js"></script>
+
+<script src="todoFir.js"></script>
+
 <script src="./src/js/todo.js"></script>
 
 </html>
